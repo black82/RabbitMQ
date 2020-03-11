@@ -23,7 +23,7 @@ public class BookingServiceImpl implements BookingService {
     private final BookingRepository bookingRepo;
 
     @Autowired
-    public BookingServiceImpl(BookingRepository bookingRepo) {
+    public BookingServiceImpl(final BookingRepository bookingRepo) {
         this.bookingRepo = bookingRepo;
     }
 
@@ -36,7 +36,7 @@ public class BookingServiceImpl implements BookingService {
      * @return Booking sought or throwing a BookingNotFound exception.
      */
     public Booking getBookingById(final UUID id) {
-        Optional<Booking> bookingOptional = bookingRepo.findById(id);
+        final Optional<Booking> bookingOptional = bookingRepo.findById(id);
         if (bookingOptional.isPresent()) {
             return bookingOptional.get();
         } else {

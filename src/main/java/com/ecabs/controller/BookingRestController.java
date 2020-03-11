@@ -62,7 +62,7 @@ public class BookingRestController {
     public ResponseEntity<HttpStatus> deleteBooking(@RequestBody final UUID id) {
         bookingService.deleteBookingById(id);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.NO_CONTENT)
                 .build();
     }
 }

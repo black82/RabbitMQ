@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>
- * Implement the basic CRUD services.
+ * Service that manages the data received from RabbitMq
  * </p>
  *
  * @author Railean Iurie
@@ -25,14 +25,14 @@ public class BookingServiceImpl implements BookingService {
 
 
     /**
-     * @param booking <p> Save the Booking to the DB</p>
+     * @param booking com.savetservice.sav_service.model.Booking class<p> Save the Booking to the DB</p>
      */
     public void savedBooking(final Booking booking) {
         this.bookingRepo.save(booking);
     }
 
     /**
-     * @param id <p> Delete Booking to Db.</p>
+     * @param booking com.savetservice.sav_service.model.Booking class <p> Delete Booking to Db.</p>
      */
     public void deleteBooking(final Booking booking) {
         this.bookingRepo.delete(booking);

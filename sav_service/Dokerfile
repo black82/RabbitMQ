@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8081:8081
+ADD /target/sav_service.jar sav_service.jar
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=container","sav_service.jar"]

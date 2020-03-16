@@ -1,12 +1,16 @@
 package com.savetservice.sav_service.rabbit;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-
-@Slf4j
+/**
+ * <p>
+ * Creating, Declaring, Configuring RabbitMq Queue.
+ * </p>
+ *
+ * @author Railean Iurie
+ */
 @Component
 public class RabbitQueueInitialize {
 

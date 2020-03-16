@@ -17,5 +17,5 @@ public class TripWaypoint {
     private Double lat;
     private Double lng;
     private Instant tripWayPointTimestamp;
-    private Booking booking;
+    private com.ecabs.model.Booking booking;
 }

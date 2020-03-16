@@ -1,5 +1,4 @@
 package com.ecabs.controller;
-
 import com.ecabs.model.Booking;
 import com.ecabs.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
- * Controller the basic CRUD services.
+ * RestController Client.
  * </p>
  *
  * @author Railean Iurie

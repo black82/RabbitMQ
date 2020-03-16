@@ -7,7 +7,13 @@ import com.savetservice.sav_service.service.BookingService;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-
+/**
+ * <p>
+ * Creating Rabbit Listener for each Special Topic, receiving the conversion messages, and transferring them to the elaboration service.
+ * </p>
+ *
+ * @author Railean Iurie
+ */
 @EnableRabbit
 @Component
 public class RabbitListenerInitialize {

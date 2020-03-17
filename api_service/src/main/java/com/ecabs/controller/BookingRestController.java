@@ -57,11 +57,4 @@ public class BookingRestController {
                 .build();
     }
 
-    @PutMapping("edit/booking")
-    public ResponseEntity<HttpStatus> editBooking(@RequestBody Booking booking) {
-        this.bookingService.editBooking(booking);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .build();
-    }
 }

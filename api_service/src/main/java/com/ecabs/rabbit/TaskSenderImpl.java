@@ -25,7 +25,7 @@ public class TaskSenderImpl implements com.ecabs.rabbit.TaskSender {
     }
 
     /**
-     * @param message java.lang.String class<p> Creating the message in the AuditMessages topic.</p>
+     * @param message java.lang.String class<p> Creating the MessageExchange.</p>
      */
     public void messageAudit(final String message) {
         this.template.convertAndSend("MessageExchange", "message", message);
